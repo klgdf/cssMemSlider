@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,41 +8,54 @@
   <title>cssMemSlider</title>
   <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
   <section class="slider">
+    <input type="radio" name="control-btn" id="slide1" checked/>
+    <input type="radio" name="control-btn" id="slide2"/>
+    <input type="radio" name="control-btn" id="slide3"/>
+    <input type="radio" name="control-btn" id="slide4"/>
+    <input type="radio" name="control-btn" id="slide5"/>
     <div class="slider-block">
       <div class="slider__item" tabindex="0">
-        <img src="./image/img1.jpg" alt="exe">
+        <img class="slider__img" src="image/img1.jpg" alt="exe">
       </div>
       <div class="slider__item" tabindex="0">
-        <img src="./image/img2.jpg" alt="pripuat">
+        <img class="slider__img" src="image/img2.jpg" alt="pripuat">
       </div>
       <div class="slider__item" tabindex="0">
-        <img src="./image/img3.jpg" alt="hands">
+        <img class="slider__img" src="image/img3.jpg" alt="hands">
       </div>
       <div class="slider__item" tabindex="0">
-        <img src="./image/img4.jpg" alt="sartr">
+        <img class="slider__img" src="image/img4.jpg" alt="sartr">
       </div>
       <div class="slider__item" tabindex="0">
-        <img src="./image/img5.jpg" alt="letov">
+        <img class="slider__img" src="image/img5.jpg" alt="letov">
       </div>
     </div>
-    <nav class="pagination">
-      <div class="pagination__item"></div>
-      <div class="pagination__item"></div>
-      <div class="pagination__item"></div>
-      <div class="pagination__item"></div>
-      <div class="pagination__item"></div>
-      <div class="pagination__item"></div>
-    </nav>
-    <div class="description">
-      <div class="description__item"></div>
-      <div class="description__item"></div>
-      <div class="description__item"></div>
-      <div class="description__item"></div>
-      <div class="description__item"></div>
-      <div class="description__item"></div>
+    <div class="slider-row">
+      <div class="slider__description">
+        ffffffffffffffffffff
+      </div>
+      <div class="pagination">
+        <label for="slide1" class="pagination__item">
+          <div class="pagination__circle"></div>
+        </label>
+        <label for="slide2" class="pagination__item">
+          <div class="pagination__circle"></div>
+        </label>
+        <label for="slide3" class="pagination__item">
+          <div class="pagination__circle"></div>
+        </label>
+        <label for="slide4" class="pagination__item">
+          <div class="pagination__circle"></div>
+        </label>
+        <label for="slide5" class="pagination__item">
+          <div class="pagination__circle"></div>
+        </label>
+      </div>
     </div>
   </section>
 </body>
+
 </html>
