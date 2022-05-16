@@ -11,9 +11,6 @@ html {
 body {
   margin: 0;
   box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100%;
 }
 
@@ -42,43 +39,85 @@ input[type="radio"] {
 }
 
 .section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.slider {
+  display: block;
   width: 70%;
+  height: 80%;
   margin: auto;
 }
 
 .slider-block {
   overflow: hidden;
   display: flex;
+  height: 100%;
 }
 
-#slide1:checked ~ .slider-block .slider-item {
-  
+#slide1:checked ~ .slider .slider__item:first-child {
+  margin: 0;
+}
+
+#slide2:checked ~ .slider .slider__item:first-child {
+  margin: -50%;
+}
+
+#slide3:checked ~ .slider .slider__item:first-child {
+  margin: -100%;
+}
+
+#slide4:checked ~ .slider .slider__item:first-child {
+  margin: -150%;
+}
+
+#slide5:checked ~ .slider .slider__item:first-child {
+  margin: -200%;
 }
 
 .slider-row {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 20px;
 }
 
 .slider__item {
   flex-shrink: 0;
   width: 100%;
-  max-height: 45%;
   transition: ease 0.4s;
-}
-
-.slider__description {
-  font-size: 16px;
-  color: #fff;
 }
 
 .slider__item img {
   display: block;
   width: 100%;
-  /* height: 100%; */
-  object-fit: cover;
+  height: 100%;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.description__item{
+  visibility: hidden;
+  opacity: 0;
+  font-size: 0;
+  transition: 0.3s;
+}
+
+#slide1:checked~.slider .description__item_1,
+#slide2:checked~.slider .description__item_2,
+#slide3:checked~.slider .description__item_3,
+#slide4:checked~.slider .description__item_4,
+#slide5:checked~.slider .description__item_5 {
+  visibility: visible;
+  opacity: 1;
+  font-size: 16px;
 }
 
 .pagination {
@@ -93,8 +132,22 @@ input[type="radio"] {
 
 .pagination__circle {
   display: block;
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  background: blue;
+  background: #000;
+  border: 2px solid white;
+  transition: 0.3s;
+}
+
+.pagination__circle:hover {
+  background: #304e21;
+}
+
+#slide1:checked~.slider .pagination__item_1 .pagination__circle,
+#slide2:checked~.slider .pagination__item_2 .pagination__circle,
+#slide3:checked~.slider .pagination__item_3 .pagination__circle,
+#slide4:checked~.slider .pagination__item_4 .pagination__circle,
+#slide5:checked~.slider .pagination__item_5 .pagination__circle {
+  background: #00dcff;
 }
