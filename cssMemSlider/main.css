@@ -113,6 +113,15 @@ input[type="radio"] {
   padding: 6px;
 }
 
+.pagination__item:hover .pagination__circle {
+  background: #304e21;
+}
+
+.pagination__item:active .pagination__circle {
+  background: #000;
+  border-color: #304e21;
+}
+
 .pagination__circle {
   display: block;
   width: 1.25rem;
@@ -121,15 +130,6 @@ input[type="radio"] {
   background: #000;
   border: 2px solid white;
   transition: 0.3s;
-}
-
-.pagination__circle:hover {
-  background: #304e21;
-}
-
-.pagination__circle:active {
-  background: #000;
-  border-color: #304e21;
 }
 
 #slide1:checked~.slider .pagination__item_1 .pagination__circle,
@@ -142,7 +142,7 @@ input[type="radio"] {
 
 @media(max-width: 767px) {
   .slider {
-    width: 20rem;
+    width: 80%;
     height: 30rem;
   }
 
