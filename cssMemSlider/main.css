@@ -167,4 +167,15 @@ input[type="radio"] {
 #slide5:checked~.slider .description__item_5 {
   font-size: 0.875rem;
 }
+
+.warning {
+  display: none;
+}
+}
+
+.warning {
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
