@@ -140,6 +140,13 @@ input[type="radio"] {
   background: #00dcff;
 }
 
+.warning {
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 @media(max-width: 767px) {
   .slider {
     width: 80%;
@@ -160,22 +167,15 @@ input[type="radio"] {
     align-self: start;
   }
 
-#slide1:checked~.slider .description__item_1,
-#slide2:checked~.slider .description__item_2,
-#slide3:checked~.slider .description__item_3,
-#slide4:checked~.slider .description__item_4,
-#slide5:checked~.slider .description__item_5 {
-  font-size: 0.875rem;
-}
+  #slide1:checked~.slider .description__item_1,
+  #slide2:checked~.slider .description__item_2,
+  #slide3:checked~.slider .description__item_3,
+  #slide4:checked~.slider .description__item_4,
+  #slide5:checked~.slider .description__item_5 {
+    font-size: 0.875rem;
+  }
 
-.warning {
-  display: none;
-}
-}
-
-.warning {
-  color: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
+  .warning {
+    display: none;
+  }
 }
