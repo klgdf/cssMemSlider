@@ -29,7 +29,8 @@ input[type="radio"] {
 .slider {
   display: block;
   width: 70%;
-  height: 80vw;
+  max-width: 60rem;
+  height: 70vh;
   margin: auto;
 }
 
@@ -140,6 +141,11 @@ input[type="radio"] {
 }
 
 @media(max-width: 767px) {
+  .slider {
+    width: 20rem;
+    height: 30rem;
+  }
+
   .slider-row {
     flex-direction: column;
     gap: 10px;
