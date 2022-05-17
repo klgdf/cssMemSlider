@@ -29,7 +29,6 @@ input[type="radio"] {
 .slider {
   display: block;
   width: 70%;
-  max-width: 60rem;
   height: 70vh;
   margin: auto;
 }
