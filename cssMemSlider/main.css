@@ -141,13 +141,6 @@ input[type="radio"] {
   background: #00dcff;
 }
 
-.warning {
-  color: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
 @media(max-width: 767px) {
   .slider {
     width: 80%;
@@ -174,9 +167,5 @@ input[type="radio"] {
   #slide4:checked~.slider .description__item_4,
   #slide5:checked~.slider .description__item_5 {
     font-size: 0.875rem;
-  }
-
-  .warning {
-    display: none;
   }
 }
